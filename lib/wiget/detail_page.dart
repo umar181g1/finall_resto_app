@@ -1,7 +1,5 @@
 import 'package:finall_resto_app/data/model/res_detail_respon.dart';
-import 'package:finall_resto_app/provider/db_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class PageDetail extends StatelessWidget {
   static const routeName = '/resto-detail';

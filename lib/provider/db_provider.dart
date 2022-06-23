@@ -1,7 +1,7 @@
-import 'package:finall_resto_app/data/model/Res_List_Respon.dart';
 import 'package:finall_resto_app/until/result_state.dart';
 import 'package:flutter/material.dart';
 
+import '../data/model/Res_List_Respon.dart';
 import '../db/database_helper.dart';
 
 class DatabaseProvider extends ChangeNotifier {

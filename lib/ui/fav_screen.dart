@@ -1,8 +1,8 @@
-import 'package:finall_resto_app/provider/db_provider.dart';
-import 'package:finall_resto_app/until/result_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../provider/db_provider.dart';
+import '../until/result_state.dart';
 import '../wiget/card_resto.dart';
 
 class ResFavoritePage extends StatelessWidget {

@@ -1,7 +1,5 @@
 import 'dart:io';
-
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
-import 'package:finall_resto_app/data/api_call.dart';
 import 'package:finall_resto_app/provider/db_provider.dart';
 import 'package:finall_resto_app/provider/list_detail_provider.dart';
 import 'package:finall_resto_app/provider/scheduling_provider.dart';
@@ -17,6 +15,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:provider/provider.dart';
 
 import 'common/navigation.dart';
+import 'data/api_call.dart';
 import 'db/database_helper.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =

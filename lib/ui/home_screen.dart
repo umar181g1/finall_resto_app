@@ -1,5 +1,6 @@
 import 'package:finall_resto_app/ui/fav_screen.dart';
 import 'package:finall_resto_app/ui/list_resto_screen.dart';
+import 'package:finall_resto_app/ui/setting_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,6 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> body = <Widget>[
     ListRestoScreen(),
     ResFavoritePage(),
+    SettingsPage()
   ];
 
   void _onItemTapped(int index) {
@@ -24,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("RestoApp"),
+        title: const Text("RestoApp"),
       ),
       body: body[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -54,12 +56,12 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.settings,
-                color: Colors.white30,
+                color: Colors.black87,
               ),
               label: 'settings',
               activeIcon: Icon(
                 Icons.settings_outlined,
-                color: Colors.white38,
+                color: Colors.black54,
               )),
 
         ],

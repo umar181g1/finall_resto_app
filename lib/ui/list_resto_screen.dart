@@ -1,5 +1,3 @@
-
-
 import 'package:finall_resto_app/ui/search_resto.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -34,8 +32,6 @@ class ListRestoScreen extends StatelessWidget {
       body: _RestoListb(context),
     );
   }
-
-
 }
 
 Widget _RestoListb(BuildContext context) {
@@ -55,7 +51,9 @@ Widget _RestoListb(BuildContext context) {
             return ListView.builder(
               itemBuilder: (context, index) {
                 var resto = state.result.restaurants[index];
-                return ListResto(restaurant: resto,);
+                return ListResto(
+                  restaurant: resto,
+                );
               },
               itemCount: state.result.restaurants.length,
             );
@@ -69,8 +67,11 @@ Widget _RestoListb(BuildContext context) {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Icon(Icons.signal_cellular_connected_no_internet_0_bar,
-                    color: Colors.green, size: 80,),
+                  Icon(
+                    Icons.signal_cellular_connected_no_internet_0_bar,
+                    color: Colors.green,
+                    size: 80,
+                  ),
                   SizedBox(height: 25),
                   Text(
                     "Harap Cek Koneksi Anda",
